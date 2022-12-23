@@ -58,9 +58,47 @@ https://www.enterpriseintegrationpatterns.com/patterns/messaging/
 
 https://www.enterpriseintegrationpatterns.com/patterns/messaging/DeadLetterChannel.html
 
+https://www.blogdoft.com.br/2021/03/28/rodando-o-kafka-no-meu-computador-com-docker-compose/
+
 - Types Exchanges
     - Direct Exchange
     - Fanout Exchange
     - Topic Exchange
     - Headers Exchange
 
+# Exemplo Docker Compose 
+
+https://github.com/ftathiago/blogdoft-toycode/blob/feature/RunningKafkaLocally/KafkaExamples/.docker/docker-compose.yaml
+
+https://www.blogdoft.com.br/2021/03/28/rodando-o-kafka-no-meu-computador-com-docker-compose/
+
+https://github.com/conduktor/kafka-stack-docker-compose
+
+https://www.conduktor.io/kafka/how-to-start-kafka-using-docker
+
+https://medium.com/xp-inc/dica-r%C3%A1pida-gerenciando-t%C3%B3picos-do-kafka-com-o-conduktor-20b1bd557840
+
+https://www.conduktor.io/get-started#docker
+
+## Comando Windows 
+
+docker run --rm `
+  -p "8080:8080" --pull=always `
+  --mount "type=bind,source=$pwd/platform-config.yaml,target=/opt/conduktor/default-platform-config.yaml" `
+  --mount "source=conduktor_data,target=/var/conduktor" `
+conduktor/conduktor-platform:latest
+
+## Comando Linux
+
+docker run --rm \
+  -p "8080:8080" --pull=always \
+  --mount "type=bind,source=$PWD/platform-config.yaml,target=/opt/conduktor/default-platform-config.yaml" \
+  --mount "source=conduktor_data,target=/var/conduktor" \
+conduktor/conduktor-platform:latest
+
+## Login
+
+http://localhost:8080
+
+User: admin@conduktor.io
+Pass: admin

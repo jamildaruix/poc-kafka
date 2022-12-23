@@ -1,0 +1,28 @@
+organization:
+  name: default
+  
+clusters:
+ - id: cluster-id
+   name: My Kafka Cluster
+   color: "#E70000"
+   ignoreUntrustedCertificate: false
+   bootstrapServers: "your-bootstrap-server:9092"
+   properties: |
+     security.protocol=SASL_SSL
+     sasl.mechanism=PLAIN
+     sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username='username'   password='password';
+   schemaRegistry:
+     id: confluent-sr
+     url: "http://your-schema-registry:8081"
+     ignoreUntrustedCertificate: false
+     security:
+       username: "username"
+       password: "password"
+   labels: {}
+
+auth:
+  demo-users:
+    - email: admin@conduktor.io
+      password: admin
+      groups:
+        - ADMIN
