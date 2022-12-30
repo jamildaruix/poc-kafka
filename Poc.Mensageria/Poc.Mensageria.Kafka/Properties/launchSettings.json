@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Poc.Mensageria.Kafka": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

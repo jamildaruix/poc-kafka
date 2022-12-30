@@ -30,6 +30,10 @@ https://www.gta.ufrj.br/ensino/eel879/trabalhos_vf_2014_2/leonardo/protocols.htm
 - Tópico é o middleware orientado a mensagens que é responsável por armazenar e entregar mensagens aos assinantes https://www.enterpriseintegrationpatterns.com/PublishSubscribeChannel.html
 
 
+# DotNet Example
+
+https://github.com/confluentinc/confluent-kafka-dotnet
+
 # Messging
 
 https://kafka.apache.org/documentation/#uses_messaging

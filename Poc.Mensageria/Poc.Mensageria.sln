@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.Mensageria.Kafka", "Poc.Mensageria.Kafka\Poc.Mensageria.Kafka.csproj", "{048CF205-91B5-4681-9594-9EAE7CF9A69A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{ED346BE0-A807-4AF3-984F-A717BD19908F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{048CF205-91B5-4681-9594-9EAE7CF9A69A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048CF205-91B5-4681-9594-9EAE7CF9A69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048CF205-91B5-4681-9594-9EAE7CF9A69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048CF205-91B5-4681-9594-9EAE7CF9A69A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED346BE0-A807-4AF3-984F-A717BD19908F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED346BE0-A807-4AF3-984F-A717BD19908F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED346BE0-A807-4AF3-984F-A717BD19908F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED346BE0-A807-4AF3-984F-A717BD19908F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36F1E3AB-660C-4650-B51B-B13C0046706F}
+	EndGlobalSection
+EndGlobal
